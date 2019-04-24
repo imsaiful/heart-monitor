@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/main_activity_view">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textSize="20sp"
+        android:id="@+id/status_label"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/status_label"
+        android:layout_toRightOf="@+id/status_label"
+        android:layout_toEndOf="@+id/status_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/status" />
+
+
+    <ImageView
+        android:id="@+id/divider1"
+        android:contentDescription="@string/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        android:layout_below="@+id/status"
+        android:src="@drawable/divider" />
+
+    <ImageView
+        android:id="@+id/heart_rate_icon"
+        android:contentDescription="@string/heart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_heart"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/heart_rate_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/heart_rate_icon"
+        android:layout_toRightOf="@id/heart_rate_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_alignTop="@id/heart_rate_icon"
+        android:text="@string/heart_rate"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/heart_rate_label"
+        android:layout_toRightOf="@+id/heart_rate_label"
+        android:layout_toEndOf="@+id/heart_rate_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/heart_rate" />
+
+    <ImageView
+        android:id="@+id/battery_icon"
+        android:contentDescription="@string/battery_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_battery"
+        android:layout_alignStart="@id/heart_rate_icon"
+        android:layout_alignLeft="@id/heart_rate_icon"
+        android:layout_below="@id/heart_rate_icon"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/battery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/heart_rate_label"
+        android:layout_alignLeft="@id/heart_rate_label"
+        android:layout_alignTop="@id/battery_icon"
+        android:text="@string/battery"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/battery_label"
+        android:layout_toRightOf="@+id/battery_label"
+        android:layout_toEndOf="@+id/battery_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/battery" />
+
+    <ImageView
+        android:contentDescription="@string/rri_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_pulse"
+        android:layout_alignStart="@id/heart_rate_icon"
+        android:layout_alignLeft="@id/heart_rate_icon"
+        android:id="@+id/rri_icon"
+        android:layout_below="@id/battery_icon"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/rri_label"
+        android:layout_alignStart="@id/battery_label"
+        android:layout_alignLeft="@id/battery_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rri_icon"
+        android:text="@string/rri"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/rri_label"
+        android:layout_toRightOf="@+id/rri_label"
+        android:layout_toEndOf="@+id/rri_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/rri" />
+
+    <ImageView
+        android:contentDescription="@string/speed_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_run"
+        android:layout_alignStart="@id/heart_rate_icon"
+        android:layout_alignLeft="@id/heart_rate_icon"
+        android:layout_below="@id/rri_icon"
+        android:layout_marginTop="16dp"
+        android:id="@+id/speed_icon"/>
+
+    <TextView
+        android:id="@+id/speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/rri_label"
+        android:layout_alignStart="@id/rri_label"
+        android:text="@string/speed"
+        android:layout_alignTop="@id/speed_icon"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/speed_label"
+        android:layout_toRightOf="@+id/speed_label"
+        android:layout_toEndOf="@+id/speed_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/speed" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginBottom="48dp"
+        android:drawableLeft="@drawable/ic_connect"
+        android:drawableStart="@drawable/ic_connect"
+        />
+</RelativeLayout>

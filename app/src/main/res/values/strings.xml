@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="recording_on">Recording started</string>
+    <string name="recording_off">Recording stopped</string>
+
+    <string name="app_name">ZephyrLogger</string>
+    <string name="menu_connect">Connect to HxM</string>
+    <string name="menu_activate">Start/Stop recording</string>
+    <string name="menu_about">About</string>
+    <string name="menu_quit">Quit</string>
+
+    <string name="status">Status:</string>
+    <string name="heart_rate">Heart Rate:</string>
+    <string name="rri">RRi:</string>
+    <string name="battery">Battery:</string>
+    <string name="speed">Speed:</string>
+
+    <string name="connect">Connect</string>
+    <string name="start_record">Start Recording</string>
+    <string name="stop_record">Stop Recording</string>
+
+    <string name="notConnected">You are not connected to a Zephyr HxM</string>
+    <string name="btNotEnabled">Bluetooth not enabled.</string>
+    <string name="connecting">connecting...</string>
+    <string name="connectedTo">connected: </string>
+    <string name="initializing">initializing</string>
+    <string name="nonePaired">No Zephyr HxM devices have been paired</string>
+    <string name="noBluetooth">Bluetooth Not Available</string>
+
+    <string name="divider">This is a content divider</string>
+    <string name="heart_icon">This is a heart icon</string>
+    <string name="battery_icon">This is a battery icon</string>
+    <string name="rri_icon">This is a pulse icon</string>
+    <string name="speed_icon">This is a speed icon</string>
+
+    <string name="about_header">Team</string>
+    <string name="about_contents">Mentor: Mr Prakash Rao+"\n\n"Team"\n\n"Swapnil Gupta"\n"Saiful Hasan"\n"
+    Tauqeer Akhtar"\n"Vikas Kumar Baraaik"\n"Vikrant"\n"</string>
+    <string name="icon">This is the app icon</string>
+
+    <string name="HXM_SERVICE_MSG_STATE">MESSAGE_STATE_CHANGE: message from HxM service indicating that the state of the service has been updated, and may have changed</string>
+    <string name="HXM_SERVICE_MSG_READ">HXM_SERVICE_MSG_READ: message from HxM service with data read from the device</string>
+    <string name="HXM_SERVICE_MSG_DEVICE_NAME">HXM_SERVICE_MSG_DEVICE_NAME: message from HxM service indicating the name of the device that a connection is associated with</string>
+    <string name="HXM_SERVICE_MSG_TOAST">HXM_SERVICE_MSG_TOAST: message from HxM service requesting a toast be shown to the user</string>
+
+    <string name="HXM_SERVICE_RESTING">HXM_SERVICE_RESTING: HxM service is at rest</string>
+    <string name="HXM_SERVICE_CONNECTING">HXM_SERIVICE_CONNECTING: HxM service is trying to connect to an HxM</string>
+    <string name="HXM_SERVICE_CONNECTED">HXM_SERVICE_CONNECTED: HxM service is connected to a HxM</string>
+
+</resources>
